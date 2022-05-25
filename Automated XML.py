@@ -135,11 +135,11 @@ def create_table():
     mytree=ET.parse(user_xml)
     root=mytree.getroot()
 
-    conn = pymysql.connect(host='db.veryangryman.savana-hosting.cz' ,
+    conn = pymysql.connect(host='' ,
                              port=10065,
-                             user='cpd',
-                             password='abc123.',
-                             db='cpd')
+                             user='',
+                             password='',
+                             db='')
 
     column_list = []
     for x in tags():
